@@ -22,7 +22,6 @@ module.exports = function (socket) {
 
       //the detectObject function is like a opencv built-in loop that returns a faces array every few milliseconds 
       //find the node_modules/opencv/data folder and you can control its detection of eyes, mouth , nose etc...
-      //but i dont know how looooool
       im.detectObject('./node_modules/opencv/data/haarcascade_frontalface_alt2.xml', {}, function(err, faces) {
         if (err) throw err;
 
